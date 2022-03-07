@@ -14,9 +14,14 @@
         font-size: 16px;
         font-family: Arial, Helvetica, sans-serif;
 
-        background-color: #fff;
+        /* background-color: #fff; */
         color: #000;
       }
+
+      /* body {
+        display: grid;
+        grid-template-rows: minmax(61px, 10%) 70vh minmax(245px, 20%);
+      } */
 
       header,
       header > figure,
@@ -40,6 +45,48 @@
       header figure img {
         width: 100%;
       }
+
+      .container {
+        padding-top: 32px;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .section-one {
+        background-color: #ffecc3;
+      }
+
+      .section-one > .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .section-one > .container > h1 {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .section-one > .container > button {
+        width: 90%;
+        margin: 0 auto;
+        padding: 6px;
+        background-color: #000;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+      }
+
+      .section-one > .container > figure {
+        width: 100%;
+        display: flex;
+      }
+
+      .section-one > .container > figure > img {
+        width: 100%;
+      }
     </style>
   </head>
   <body>
@@ -51,7 +98,23 @@
         />
       </figure>
     </header>
-    <main>main</main>
+    <main>
+      <section class="section-one">
+        <div class="container">
+          <h1>
+            [Nome], bem-vindo ao Smart Fit Coach. Agende sua 1ª consulta hoje
+            mesmo!
+          </h1>
+          <button>quero agendar minha consulta</button>
+          <figure>
+            <img
+              src="./assets/img/cb78e62efd8250df9e029a4de4cd634a.jpg"
+              alt="bem-vindo"
+            />
+          </figure>
+        </div>
+      </section>
+    </main>
     <footer>footer</footer>
   </body>
 </html>
