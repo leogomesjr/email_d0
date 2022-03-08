@@ -69,6 +69,7 @@
 
       .section-one > .container > button {
         width: 90%;
+        min-width: 260px;
         margin: 0 auto;
         padding: 6px;
         background-color: #000;
@@ -77,6 +78,7 @@
         text-transform: uppercase;
         font-size: 0.8rem;
         margin-bottom: 20px;
+        border-radius: 5px;
       }
 
       .section-one > .container > figure {
@@ -86,6 +88,77 @@
 
       .section-one > .container > figure > img {
         width: 100%;
+      }
+
+      .section-two {
+      }
+
+      .section-two > .container {
+      }
+
+      .section-two > .container > p {
+        padding-bottom: 32px;
+      }
+
+      .card {
+        margin-bottom: 40px;
+      }
+
+      .card > figure {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      .card > figure > img {
+        width: 100%;
+      }
+
+      .card > div {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card > div > h3 {
+        margin-bottom: 8px;
+        font-size: 1.25rem;
+      }
+
+      .card > div > p {
+        color: #777777;
+        margin-bottom: 20px;
+      }
+
+      .card > div > button {
+        width: 60%;
+        min-width: 200px;
+        margin: 0 auto;
+        padding: 6px;
+        background-color: #000;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        border-radius: 5px;
+      }
+
+      .card:nth-child(3) {
+        background-color: #ffebc2;
+        border-radius: 10px;
+        padding: 20px;
+      }
+
+      .card:nth-child(3) > h3 {
+        margin-bottom: 20px;
+      }
+
+      .card:nth-child(3) > figure {
+        margin-bottom: 0px;
+      }
+
+      .card:nth-child(4) {
+        background-color: #def0dc;
+        border-radius: 10px;
+        padding: 20px;
       }
     </style>
   </head>
@@ -112,6 +185,56 @@
               alt="bem-vindo"
             />
           </figure>
+        </div>
+      </section>
+      <section class="section-two">
+        <div class="container">
+          <p>
+            Agora, você tem o acompanhamento exclusivo do nosso time de
+            professores para ajustar a sua rotina de exercícios e conquistar
+            ainda mais resultados. Veja tudo o que o Smart Fit Coach oferece.
+          </p>
+          <div class="card">
+            <figure>
+              <img
+                src="./assets/img/40e5c278f89a73d0d607a6bb93881166.png"
+                alt="personal"
+              />
+            </figure>
+            <div>
+              <h3>Consultoria por chamada de vídeo</h3>
+              <p>
+                Agende agora mesmo o seu atendimento com um professores. Estamos
+                ansiosos para transformar seu corpo e sua saúde!
+              </p>
+              <button>agende agora mesmo</button>
+            </div>
+          </div>
+          <div class="card">
+            <h3>
+              Seu treino personalizado, para fazer na academia ou onde quiser,
+              fica disponível no Smart Fit App
+            </h3>
+            <figure>
+              <img
+                src="./assets/img/6afea9b57d7ade5d6e8ccc76e1db8241.png"
+                alt="clock"
+              />
+            </figure>
+          </div>
+          <div class="card">
+            <figure>
+              <img
+                src="./assets/img/febf03a40957540c3fec8ffc6c18189a.png"
+                alt="telefone"
+              />
+            </figure>
+            <div>
+              <h3>Tire suas dúvidas com nosso time via WhatsApp</h3>
+              <p>(segunda a sexta das 09h às 18h)</p>
+              <button>é só clicar aqui</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
