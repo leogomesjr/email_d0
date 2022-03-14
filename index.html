@@ -171,7 +171,7 @@
         color: #000;
       }
 
-      footer {
+      /* footer {
         width: 100%;
         color: #fff;
       }
@@ -217,6 +217,47 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+      } */
+
+      footer {
+        border-top: 1px solid #def0dc;
+        width: 100%;
+        background-color: #fff;
+        padding: 30px 20px;
+      }
+
+      footer div.limit {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      /* footer div.limit:first-child {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin-bottom: 40px;
+      } */
+      footer div.limit:first-child {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        row-gap: 20px;
+      }
+
+      footer div.limit:last-child {
+        margin-top: 20px;
+      }
+
+      footer div.limit:last-child > p {
+        text-align: center;
+      }
+
+      footer div.limit:first-child > div:first-child > p:last-child {
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+
+      footer div.limit:first-child > div:last-child {
+        display: flex;
+        justify-content: space-evenly;
       }
 
       @media (min-width: 600px) {
@@ -317,6 +358,22 @@
         .card:nth-child(4) > div > button {
           margin-bottom: 0px;
         }
+
+        footer div.limit:first-child {
+          display: grid;
+          grid-template-columns: 60% 40%;
+          grid-template-rows: 1fr;
+          row-gap: 0px;
+          margin-bottom: 40px;
+        }
+
+        footer div.limit:last-child {
+          margin-top: 0px;
+        }
+
+        footer div.limit:last-child > p {
+          text-align: left;
+        }
       }
     </style>
   </head>
@@ -413,61 +470,44 @@
       </div>
     </main>
     <footer>
-      <div class="parte-one">
-        <div class="limit">
+      <div class="limit">
+        <div>
+          <p>Até breve,</p>
           <p>
-            Para agendar novos atendimentos,
-            <a
-              href="https://coachonline.simplybook.me/v2/#book/service/1/count/1/provider/any/"
-              >clique aqui</a
-            >
-            e, para gerenciar seus agendamentos,
-            <a
-              href="https://coachonline.simplybook.me/v2/#client/bookings/type/upcoming"
-              >clique aqui</a
-            >.
-          </p>
-          <p>
-            Tem dúvidas e sugestões? Entre em contato com
-            <span>coach@smartfit.com</span>.
+            <span>Equipe Smart Fit Coach</span>
           </p>
         </div>
-      </div>
-      <div class="parte-two">
-        <div class="limit">
-          <a href="https://www.instagram.com/smartfit/">
+
+        <div>
+          <a href="https://www.youtube.com/channel/UCJi60eWE1f3OMx9G4V2LDMw">
             <figure>
-              <img
-                src="./assets/img/9cc7f6501cf952cd38a30d53c17cc4f7.png"
-                alt="instagram"
-              />
-            </figure>
-          </a>
-          <a href="https://pt-br.facebook.com/SmartFit.Oficial/">
-            <figure>
-              <img
-                src="./assets/img/9b55eab12614b7e3841d5d8afe3b98e9.png"
-                alt="facebook"
-              />
+              <img src="./assets/img/youtubelogo.png" alt="youtube" />
             </figure>
           </a>
           <a href="https://twitter.com/SmartFitoficial">
             <figure>
-              <img
-                src="./assets/img/277f87b7c904701626f94f0986ba4f53.png"
-                alt="twitter"
-              />
+              <img src="./assets/img/twitterlogo.png" alt="twitter" />
             </figure>
           </a>
-          <a href="https://www.youtube.com/channel/UCJi60eWE1f3OMx9G4V2LDMw">
+          <a href="https://open.spotify.com/user/smartfit_oficial">
             <figure>
-              <img
-                src="./assets/img/047ad283aacf0cb7c79ff695f2964943.png"
-                alt="youtube"
-              />
+              <img src="./assets/img/spotifylogo.png" alt="spotfy" />
+            </figure>
+          </a>
+          <a href="https://www.instagram.com/smartfit/">
+            <figure>
+              <img src="./assets/img/instagramlogo.png" alt="instagram" />
+            </figure>
+          </a>
+          <a href="https://pt-br.facebook.com/SmartFit.Oficial/">
+            <figure>
+              <img src="./assets/img/facebooklogo.png" alt="facebook" />
             </figure>
           </a>
         </div>
+      </div>
+      <div class="limit">
+        <p>Smart Fit Academias, 2022</p>
       </div>
     </footer>
   </body>
